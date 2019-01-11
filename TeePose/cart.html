@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Icon API-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts API-->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,700" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="images/logoV2.png" onmouseover="this.src='images/logo_dabV2.png'" onmouseout="this.src='images/logoV2.png'" alt="Logo"></a>
+        <p class="name">Tee Pose</p>
+      </div>
+      <!-- Full Screen Link -->
+      <div class="collapse navbar-collapse">
+    		<ul class="navbar-nav ml-auto">
+   				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shirts.html">Shirts</a></li>
+          <li class="nav-item"><a class="nav-link" href="hoodies.html">Hoodies</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"  aria-label="cart"><i class="fas fa-shopping-cart"></i></a></li>
+    		</ul>
+      </div>
+      <!-- Mobile Link -->
+      <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="shirts.html">Shirts</a>
+          <a href="hoodies.html">Hoodies</a>
+          <a href="accessories.html">Accessories</a>
+          <a href="about_us.html">About Us</a>
+          <a href="cart.html">Cart</a>
+        </div>
+      </div>
+      <header class="menu">
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+      </header>
+    </nav>
+    
+    <!-- Title -->
+    <div class="row">
+      <div class="col-sm bgheader text-center">
+        <h1>Cart</h1>
+      </div>
+    </div>
+  
+    <!-- informational section -->
+    <div class="image-container">
+     <img src="images/construction.png" class="resize-about" alt="sorry">
+     <!--Image courtesy of https://www.kisspng.com/png-stock-photography-plumber-construction-worker-plum-677918/-->
+      <div class="overlay-text">
+       <h2 class="insert-text">Please be patient with us as we get our full website up and running. Very soon, you will be able to feel the comfort of Tee Pose wrapped around you like a hug from a loved one.</h2>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-holder">
+      <div class="row">
+        <div class="col-sm text-center">
+          <h4>Socials</h4>
+          <ul class="social_icons">
+            <li><a href="https://twitter.com/teeposeofficial?lang=en" class="hover"><i class="fab fa-twitter-square"></i><span class="sr-only">twitter</span></a></li>
+            <li><a href="https://www.instagram.com/teeposeclothing/" class="hover"><i class="fab fa-instagram"></i><span class="sr-only">instagram</span></a></li>
+            <li><a href="https://www.facebook.com/teeposeofficial/" class="hover"><i class="fab fa-facebook-square"></i><span class="sr-only">facebook</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm text-center">
+          <h4><a href="gallery.html" class="hover">Shop</a></h4>
+            <ul class="footer_navbar">
+              <li><a href="shirts.html" class="hover">Shirts</a></li>
+              <li><a href="hoodies.html" class="hover">Hoodies</a></li>
+              <li><a href="accessories.html" class="hover">Accessories</a></li>
+            </ul>
+          </div>
+        <div class="col-sm text-center">
+          <h4><a href="about_us.html" class="hover">About</a></h4>
+          <ul class="footer_navbar">
+            <li><a href="contact.html" class="hover">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+/////////////////////////////////////////////////////////////////////////
+      /* Navbar */
+/////////////////////////////////////////////////////////////////////////
+      //Overlay navigation fill screen when navOverlay menu is clicked
+      function openNav() {
+      document.getElementById("navOverlay").style.height = "100%"; }
+      //Overlay navigation closes when x is clicked
+      function closeNav() {
+      document.getElementById("navOverlay").style.height = "0%"; }
+    </script>
+  </body>
+</html>
