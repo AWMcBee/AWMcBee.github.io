@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hoodie Item</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- Icon API-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts API-->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="images/logoV2.png" onmouseover="this.src='images/logo_dabV2.png'" onmouseout="this.src='images/logoV2.png'" alt="Logo"></a>
+        <p class="name">Tee Pose</p>
+      </div>
+      <!-- Full Screen Links -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shirts.html">Shirts</a></li>
+          <li class="nav-item"><a class="nav-link" href="hoodies.html">Hoodies</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"  aria-label="cart"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+      <!-- Mobile Links -->
+      <div id="navOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="shirts.html">Shirts</a>
+          <a href="hoodies.html">Hoodies</a>
+          <a href="accessories.html">Accessories</a>
+          <a href="about_us.html">About Us</a>
+          <a href="cart.html">Cart</a>
+        </div>
+      </div>
+      <header class="menu">
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+      </header>
+    </nav>
+    
+    <!-- Item Section -->
+    <div class="container bgcontainer">
+      <div class="row">
+        <!-- Item Title -->
+        <div class="col-sm bgheader">
+          <h1 id="title">Hoodies</h1>
+        </div>
+      </div>
+      <!-- Item Info Section -->
+      <div class="row">
+        <div class="col-sm">
+          <!-- Item Image -->
+          <div class="divItem">
+            <!-- T-Shirt Design -->
+            <img class="resize myImg" id="item" src="images/80s_icon.png" alt="80's Retro">
+            <!-- Blank T-Shirt -->
+            <img class="resize" id="color" src="images/blank_hoodie_black.png" alt="Black">
+          </div>
+        </div>
+        <div class="col-sm">
+          <!-- Item Price -->
+          <h2 class="price" id="price">$5.00</h2>
+          <!-- Item Sizes -->
+          <p>Sizes:</p>
+          <div class="form-check form-check-inline">
+            <!-- Radio Button Selectors -->
+            <label>
+              <input class="form-check-input" type="radio" name="size" id="small" value="small" />
+              <span>S</span>
+            </label>
+            <label>
+              <input class="form-check-input" type="radio" name="size" id="medium" value="medium" />
+              <span class="medium">M</span>
+            </label>
+            <label>
+              <input class="form-check-input" type="radio" name="size" id="large" value="large" />
+              <span>L</span>
+            </label>
+            <label>
+              <input class="form-check-input" type="radio" name="size" id="xlarge" value="xlarge" />
+              <span class="extra">XL</span>
+            </label>             
+          </div>
+          <!-- Item Colors -->
+          <p>Color:</p>
+          <div class="form-check form-check-inline">
+            <!-- Radio Button Selectors -->
+            <label class="color" id="lBlack">
+              <input class="form-check-input color" type="radio" name="color" id="black" value="Black" />
+              <span hidden>Black</span>
+            </label>
+            <label class="color" id="lWhite">
+              <input class="form-check-input color" type="radio" name="color" id="white" value="White" />
+              <span hidden>White</span>
+            </label>
+          </div>
+          <!-- Item Quantity Counter -->
+          <p>Quantity</p>
+          <label>
+            <div class="input-group plus-minus-input">
+              <!-- Minus Button -->
+              <div class="input-group-button">
+                <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                  <i class="fa fa-minus" aria-hidden="true"></i><p hidden>dabDown</p>
+                </button>
+              </div>
+              <!-- Display Quantity -->
+              <input class="input-group-field quantity" type="number" name="quantity" value="0">
+              <span hidden>Quantity</span>
+              <!-- Plus Button -->
+              <div class="input-group-button">
+                <button type="button" class="button hollow" data-quantity="plus" data-field="quantity">
+                  <i class="fa fa-plus" aria-hidden="true"></i><p hidden>dabUp</p>
+                </button>
+              </div>
+            </div>
+          </label>
+          <!-- Buy Button -->
+          <a href="cart.html"><button  id="buy" name="buy" type="submit">ADD TO CART</button></a>
+        </div>
+      </div>
+
+      <!-- Carousel Header -->
+      <div class="row oCarousel">
+        <div class="col-sm bgheader">
+          <h2 id="others">Other Items</h2>
+        </div>
+      </div>
+      <!-- Other Items Carousel -->
+      <div class="row oCarousel">
+        <div class="col-sm">
+          <div id="carouselExampleControls" class="carousel slide carouselOther" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img class="items fox" src="images/fox_hoodie.png" alt="Fox">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items mug" src="images/mug_hoodie.png" alt="Happy Mug">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items seal" src="images/seal_hoodie.png" alt="Seal">
+                    </div>
+                  </div>
+                </div>          
+              </div>
+              <!-- Next Slide -->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img class="items lemon" src="images/lemon_hoodie.png" alt="Lemon Boy">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items lion" src="images/lion_hoodie.png" alt="Lion">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items mountain" src="images/mountain_hoodie.png" alt="Mountain">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Next Slide -->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img class="items retro" src="images/80s_hoodie.png" alt="Retro 80's">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items teddy" src="images/teddy_hoodie.png" alt="Terror Teddy">
+                    </div>
+                    <div class="col-sm">
+                      <img class="items bearpaw" src="images/bearpaw_hoodie.png" alt="Bear Paw">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-holder">
+      <div class="row">
+        <div class="col-sm text-center">
+          <h4>Socials</h4>
+          <ul class="social_icons">
+            <li><a href="https://twitter.com/teeposeofficial?lang=en" class="hover"><i class="fab fa-twitter-square"></i><span class="sr-only">twitter</span></a></li>
+            <li><a href="https://www.instagram.com/teeposeclothing/" class="hover"><i class="fab fa-instagram"></i><span class="sr-only">instagram</span></a></li>
+            <li><a href="https://www.facebook.com/teeposeofficial/" class="hover"><i class="fab fa-facebook-square"></i><span class="sr-only">facebook</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm text-center">
+          <h4><a href="gallery.html" class="hover">Shop</a></h4>
+          <ul class="footer_navbar">
+            <li><a href="shirts.html" class="hover">Shirts</a></li>
+            <li><a href="hoodies.html" class="hover">Hoodies</a></li>
+            <li><a href="accessories.html" class="hover">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="col-sm text-center">
+          <h4><a href="about_us.html" class="hover">About</a></h4>
+          <ul class="footer_navbar">
+            <li><a href="contact.html" class="hover">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+/////////////////////////////////////////////////////////////////////////
+      /*Navbar*/
+/////////////////////////////////////////////////////////////////////////
+      //Overlay navigation fill screen when navOverlay menu is clicked
+      function openNav() {
+      document.getElementById("navOverlay").style.height = "100%"; }
+      //Overlay navigation closes when x is clicked
+      function closeNav() {
+      document.getElementById("navOverlay").style.height = "0%"; }
+
+/////////////////////////////////////////////////////////////////////////
+      /*Quantity Counter*/
+/////////////////////////////////////////////////////////////////////////
+      jQuery(document).ready(function(){
+        // This button will increment the value
+        $('[data-quantity="plus"]').click(function(e){
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          fieldName = $(this).attr('data-field');
+          // Get its current value
+          var currentVal = parseInt($('input[name='+fieldName+']').val());
+          // If is not undefined
+          if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+          } 
+          else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+          }
+        });
+        // This button will decrement the value till 0
+        $('[data-quantity="minus"]').click(function(e) {
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          fieldName = $(this).attr('data-field');
+          // Get its current value
+          var currentVal = parseInt($('input[name='+fieldName+']').val());
+          // If it isn't undefined or its greater than 0
+          if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+          }
+          else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+          }
+        });
+      });
+
+/////////////////////////////////////////////////////////////////////////
+      /*Color Selector*/
+/////////////////////////////////////////////////////////////////////////
+      $("#black").click(function(){
+        $("#color").attr('src','images/blank_hoodie_black.png');
+      });
+      $("#white").click(function(){
+        $("#color").attr('src','images/blank_hoodie_white.png');
+      });
+
+/////////////////////////////////////////////////////////////////////////
+      /*Item Selector*/
+/////////////////////////////////////////////////////////////////////////
+      //Item Functions (Sets what get display for each item)
+      function retro() {
+        //Change Title
+        $("#title").text("R A D I C A L");
+        //Change Image
+        $("#item").attr('src','images/80s_icon.png');
+        $("#color").attr('src','images/blank_hoodie_white.png');
+        //Change Price
+        $("#price").text("$80.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function teddy() {
+        //Change Title
+        $("#title").text("Terror Teddy");
+        //Change Image
+        $("#item").attr('src','images/teddy_icon.png');
+        $("#color").attr('src','images/blank_hoodie_black.png');
+        //Change Price
+        $("#price").text("$40.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function bearpaw() {
+        //Change Title
+        $("#title").text("Rawr XD");
+        //Change Image
+        $("#item").attr('src','images/bearpaw_icon.png');
+        $("#color").attr('src','images/blank_hoodie_white.png');
+        //Change Price
+        $("#price").text("$35.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function fox() {
+        //Change Title
+        $("#title").text("Fox Grandpa");
+        //Change Image
+        $("#item").attr('src','images/fox_icon.png');
+        $("#color").attr('src','images/blank_hoodie_black.png');
+        //Change Price
+        $("#price").text("$40.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function mug() {
+        //Change Title
+        $("#title").text("Covfefe");
+        //Change Image
+        $("#item").attr('src','images/mug_icon.png');
+        $("#color").attr('src','images/blank_hoodie_white.png');
+        //Change Price
+        $("#price").text("$45.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function seal() {
+        //Change Title
+        $("#title").text("Emblem Hoodie");
+        //Change Image
+        $("#item").attr('src','images/seal_white_icon.png');
+        $("#color").attr('src','images/blank_hoodie_black.png');
+        //Change Price
+        $("#price").text("$15.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").hide();
+      }
+      function lemon() {
+        //Change Title
+        $("#title").text("Lemonious");
+        //Change Image
+        $("#item").attr('src','images/lemon_icon.png');
+        $("#color").attr('src','images/blank_hoodie_white.png');
+        //Change Price
+        $("#price").text("$30.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function lion() {
+        //Change Title
+        $("#title").text("Meow (OWO)");
+        //Change Image
+        $("#item").attr('src','images/lion_icon.png');
+        $("#color").attr('src','images/blank_hoodie_black.png');
+        //Change Price
+        $("#price").text("$35.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+      function mountain() {
+        //Change Title
+        $("#title").text("Rocky Mountain High");
+        //Change Image
+        $("#item").attr('src','images/mountain_icon.png');
+        $("#color").attr('src','images/blank_hoodie_white.png');
+        //Change Price
+        $("#price").text("$40.00");
+        //Hide and Show color selectors
+        $("#lBlack").show();
+        $("#lWhite").show();
+      }
+
+      //Item Change (Changes the item on page when called)
+      //item
+      $(".retro").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "retro");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        retro();
+      });
+      if(localStorage.getItem("hitem") == "retro"){
+        retro();
+      }
+      //item
+      $(".teddy").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "teddy");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        teddy();
+      });
+      if(localStorage.getItem("hitem") == "teddy"){
+        teddy();
+      }
+      //item
+      $(".bearpaw").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "bearpaw");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        bearpaw();
+      });
+      if(localStorage.getItem("hitem") == "bearpaw"){
+        bearpaw();
+      }
+      //item
+      $(".fox").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "fox");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        fox();
+      });
+      if(localStorage.getItem("hitem") == "fox"){
+        fox();
+      }
+      //item
+      $(".mug").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "mug");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        mug();
+      });
+      if(localStorage.getItem("hitem") == "mug"){
+        mug();
+      }
+      //item
+      $(".seal").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "seal");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        seal();
+      });
+      if(localStorage.getItem("hitem") == "seal"){
+        seal();
+      }
+      //item
+      $(".lemon").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "lemon");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        lemon();
+      });
+      if(localStorage.getItem("hitem") == "lemon"){
+        lemon();
+      }
+      //item
+      $(".lion").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "lion");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        lion();
+      });
+      if(localStorage.getItem("hitem") == "lion"){
+        lion();
+      }
+      //item
+      $(".mountain").click(function(){
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          //Sets local var item
+          localStorage.setItem("hitem", "mountain");
+        }
+        //Reset Quantity
+        $(".quantity").val("0");
+        //Runs Function
+        mountain();
+      });
+      if(localStorage.getItem("hitem") == "mountain"){
+        mountain();
+      }
+
+/////////////////////////////////////////////////////////////////////////
+      /*Carousel*/
+/////////////////////////////////////////////////////////////////////////
+      $('.carousel').carousel({
+        //Prevents auto cycle
+        interval: false
+      })
+    </script>
+  </body>
+</html>
