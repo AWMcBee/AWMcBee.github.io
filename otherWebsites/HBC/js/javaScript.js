@@ -3,6 +3,9 @@ window.onscroll = function(ev) {
 	//Total Height of the page - Amount scrolled in Y direction
 	var scrollHeight = (-document.body.offsetHeight)+(window.innerHeight + window.scrollY);
 	
+	if (scrollHeight > 0){
+		scrollHeight == 0;
+	}
 	//Value Test
 	//document.getElementById("test").innerHTML = "Total Number: " + scrollHeight;
 				
