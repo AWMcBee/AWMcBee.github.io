@@ -12,7 +12,7 @@ body {
 /* Footer Text */
 .footerText{
 	position: absolute;
-	bottom: 0px; left: 50%;
+	bottom: 10px; left: 50%;
 	transform: translate(-50%);
 }
 /* Facebook Icon */
