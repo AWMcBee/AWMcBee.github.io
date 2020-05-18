@@ -39,21 +39,24 @@
 			</div>
 		</nav>
 
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row" style="position: relative; border-bottom: 1px solid #E5E5E5">
-				<div style="position: absolute; left: 10%; top: 30%; width: 20%;">
+				<div id="personalDesigner" style="position: absolute; top: 40%; width: 20%;">
 					<h1 class="personalHeader">Designer</h1>
 					<p class="personalText" style="margin-top: 10px; margin-bottom: 0px;">Graphic Designer & Video Compositor with a passion for designing beautiful but practical designs.</p>
 				</div>
-				<div style="position: absolute; right: 10%; top: 30%; width: 20%;">
+				<div id="personalCoder" style="position: absolute; top: 40%; width: 20%;">
 					<h1 class="personalHeader">&lt;Coder&gt;</h1>
 					<p class="personalText" style="margin-top: 10px; margin-bottom: 0px;">Front End Developer that blends the worlds of complex code functions with elegant page design.</p>
 				</div>
-				<div class="col-md-12">
-					<img src="images/HeadShot_Combined_Matrix.png" width="50%" style="display: block; margin: auto;" alt="Hodson's Bay Company Logo">
+				<div onMouseMove="mouseMove(event)" onMouseOut="startTime()" style="position: relative; width: 100%;">
+					<img src="images/HeadShot_Cartoon.png" class="headCartoon" style="position: absolute; clip-path: polygon(0% 0%, var(--mouse-x) 0%, var(--mouse-x) 100%, 0% 100%);">
+					<img src="images/HeadShot_Matrix.png" class="headMatrix" style="position: relative; clip-path: polygon(var(--mouse-x) 0%, 100% 0%, 100% 100%, var(--mouse-x) 100%);">
 				</div>
 			</div>
-			
+		</div>
+		
+		<div class="container">
 			<br>
 			<h3 align="center">Recent Projects</h3>
 			<hr width="60%">

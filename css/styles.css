@@ -7,15 +7,43 @@
 .personalText{
 	display: inline;
 }
+.headCartoon{
+	width: 30%;
+	left: 35%;
+}
+.headMatrix{
+	width: 30%;
+	left: 35%;
+}
+#personalDesigner{
+	left: 20%;
+}
+#personalCoder{
+	right: 15%;
+}
 @media only screen 
 and (max-width : 992px) {
     /* Styles */
+	.headCartoon{
+		width: 50%;
+		left: 25%;
+	}
+	.headMatrix{
+		width: 50%;
+		left: 25%;
+	}
 	.personalText{
 		display: none;
 		font-size: 10px;
 	}
 	.personalHeader{
 		font-size: 30px;
+	}
+	#personalDesigner{
+		left: 10%;
+	}
+	#personalCoder{
+		right: 10%;
 	}
 }
 
